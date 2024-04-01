@@ -1,22 +1,21 @@
-import React, { useState } from 'react'
+import React, { useReducer } from 'react'
+import { initialState, reducer } from './reducer';
 
 // https://youtu.be/cWu_QAckWFE?si=VPrJnzX5RXNECYxM 参考
-const FetchData = () => {
-  const [loading, setLoading] = useState(false); // ローディング
-  const [post, setPost] = useState({}); // データ
-  const [error, setError] = useState(false); // エラー の3つセット
+const FetchDataReducer = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const { loading, post, error } = state;
   
   const handleClick = () => {
-    setLoading(true);
-    setError(false);
+    dispatch({ type: 'START' });
+    
     fetch('https://jsonplaceholder.typicode.com/todos/21')
       .then(response => response.json())
       .then(json => {
-        setPost(json);
-        setLoading(false);
+        dispatch({ type: 'SUCCESS', payload: json });
       })
       .catch (( error ) => {
-        setError(true);
+        dispatch({ type: 'ERROR' });
       });
   };
   
@@ -30,4 +29,4 @@ const FetchData = () => {
   )
 }
 
-export default FetchData
+export default FetchDataReducer
