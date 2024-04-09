@@ -22,7 +22,7 @@ function App() {
       <hr />
       {/* <AsyncAwait /> */}
       <hr />
-      <DashBoard />
+      <DashBoard username="nasio" notification={10} />
     </>
   );
 }
