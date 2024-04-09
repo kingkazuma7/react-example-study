@@ -5,6 +5,7 @@ import AsyncAwait from './components/JavaScript/AsyncAwait';
 import ErrorTryCatch from './components/JavaScript/ErrorTryCatch';
 import PromiseParts from './components/JavaScript/PromiseParts';
 import Return from './components/JavaScript/Return';
+import DashBoard from './components/TypeScript/DashBoard';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
       <hr />
       {/* <Return /> */}
       <hr />
-      <AsyncAwait />
+      {/* <AsyncAwait /> */}
+      <hr />
+      <DashBoard />
     </>
   );
 }
