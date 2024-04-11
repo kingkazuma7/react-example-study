@@ -1,26 +1,22 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"] // エイリアスの設定
-    },
+    "target": "es2020",
     "module": "esnext",
-    "allowJs": true,
-    "jsx": "preserve",
+    "lib": ["es2020", "dom"],
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "strict": true,
-    "noImplicitAny": false,
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
     "moduleResolution": "node",
+    "baseUrl": "src",
     "esModuleInterop": true,
-    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["**/*.js", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "dist", "webpack.config.js"]
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules"],
+  "compileOnSave": false
 }
