@@ -8,6 +8,16 @@ import Return from './components/JavaScript/Return';
 import DashBoard from './components/TypeScript/DashBoard';
 
 function App() {
+  // const name = {
+  //   firstName: "名無し", lastName: "太郎" 
+  // }
+  
+  const students = [
+    {id:1, name: 'john', age: 12},
+    {id:2, name: 'mary', age: 10},
+    {id:3, name: 'taro', age: 11},
+  ];
+  
   return (
     <>
       {/* <FetchData /> */}
@@ -22,7 +32,7 @@ function App() {
       <hr />
       {/* <AsyncAwait /> */}
       <hr />
-      <DashBoard username="nasio" notification={10} />
+      <DashBoard username="nasio" notification={10} name={{ firstName: "名無し", lastName: "太郎"  }} students={students} />
     </>
   );
 }
