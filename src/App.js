@@ -7,6 +7,8 @@ import PromiseParts from './components/JavaScript/PromiseParts';
 import Return from './components/JavaScript/Return';
 import DashBoard from './components/TypeScript/DashBoard';
 import Status from './components/TypeScript/Status';
+import ChildrenParts from './components/TypeScript/ChildrenParts';
+import WrapperChildrenParts from './components/TypeScript/WrapperChildrenParts';
 
 function App() {
   // const name = {
@@ -35,8 +37,14 @@ function App() {
       <hr />
       {/* <DashBoard username="nasio" notification={10} name={{ firstName: "名無し", lastName: "太郎"  }} students={students} /> */}
       <hr />
-      <Status status="loading" />
+      {/* <Status status="loading" /> */}
       {/* <Status /> */}
+      <hr />
+      <div>
+      <WrapperChildrenParts>
+        <ChildrenParts>親から子へチルドレン</ChildrenParts>
+      </WrapperChildrenParts>
+      </div>
     </>
   );
 }
