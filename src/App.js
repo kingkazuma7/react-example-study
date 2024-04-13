@@ -9,6 +9,7 @@ import DashBoard from './components/TypeScript/DashBoard';
 import Status from './components/TypeScript/Status';
 import ChildrenParts from './components/TypeScript/ChildrenParts';
 import WrapperChildrenParts from './components/TypeScript/WrapperChildrenParts';
+import Event from './components/TypeScript/Event';
 
 function App() {
   // const name = {
@@ -40,11 +41,16 @@ function App() {
       {/* <Status status="loading" /> */}
       {/* <Status /> */}
       <hr />
-      <div>
+      {/* <div>
       <WrapperChildrenParts>
         <ChildrenParts>親から子へチルドレン</ChildrenParts>
       </WrapperChildrenParts>
-      </div>
+      </div> */}
+      <Event
+        click={(e, text) => alert(text)}
+        change={(e) => console.log(e)}
+        // change={(e) => console.log(e.target.value)}
+      />
     </>
   );
 }
