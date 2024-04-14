@@ -10,6 +10,7 @@ import Status from './components/TypeScript/Status';
 import ChildrenParts from './components/TypeScript/ChildrenParts';
 import WrapperChildrenParts from './components/TypeScript/WrapperChildrenParts';
 import Event from './components/TypeScript/Event';
+import UseState from './components/UseState';
 
 function App() {
   // const name = {
@@ -46,11 +47,13 @@ function App() {
         <ChildrenParts>親から子へチルドレン</ChildrenParts>
       </WrapperChildrenParts>
       </div> */}
-      <Event
+      {/* <Event
         click={(e, text) => alert(text)}
         change={(e) => console.log(e)}
         // change={(e) => console.log(e.target.value)}
-      />
+      /> */}
+      <hr />
+      <UseState />
     </>
   );
 }
