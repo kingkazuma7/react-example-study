@@ -11,6 +11,7 @@ import ChildrenParts from './components/TypeScript/ChildrenParts';
 import WrapperChildrenParts from './components/TypeScript/WrapperChildrenParts';
 import Event from './components/TypeScript/Event';
 import UseState from './components/UseState';
+import CustomHook from './components/CustomHook';
 
 function App() {
   // const name = {
@@ -53,7 +54,9 @@ function App() {
         // change={(e) => console.log(e.target.value)}
       /> */}
       <hr />
-      <UseState />
+      {/* <UseState /> */}
+      <hr />
+      <CustomHook />
     </>
   );
 }
