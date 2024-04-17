@@ -12,6 +12,7 @@ import WrapperChildrenParts from './components/TypeScript/WrapperChildrenParts';
 import Event from './components/TypeScript/Event';
 import UseState from './components/UseState';
 import CustomHook from './components/CustomHook';
+import ArrayMap from './components/ArrayMap';
 
 function App() {
   // const name = {
@@ -56,7 +57,9 @@ function App() {
       <hr />
       {/* <UseState /> */}
       <hr />
-      <CustomHook />
+      {/* <CustomHook /> */}
+      <hr />
+      <ArrayMap />
     </>
   );
 }
