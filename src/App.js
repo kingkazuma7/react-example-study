@@ -13,6 +13,7 @@ import Event from './components/TypeScript/Event';
 import UseState from './components/UseState';
 import CustomHook from './components/CustomHook';
 import ArrayMap from './components/ArrayMap';
+import ReactuseEffect from './components/ReactuseEffect';
 
 function App() {
   // const name = {
@@ -59,7 +60,9 @@ function App() {
       <hr />
       {/* <CustomHook /> */}
       <hr />
-      <ArrayMap />
+      {/* <ArrayMap /> */}
+      <hr />
+      <ReactuseEffect />
     </>
   );
 }
