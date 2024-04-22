@@ -14,6 +14,7 @@ import UseState from './components/UseState';
 import CustomHook from './components/CustomHook';
 import ArrayMap from './components/ArrayMap';
 import ReactuseEffect from './components/ReactuseEffect';
+import Object_01 from './components/Owl_JavaScript/Object_01';
 
 function App() {
   // const name = {
@@ -62,7 +63,9 @@ function App() {
       <hr />
       {/* <ArrayMap /> */}
       <hr />
-      <ReactuseEffect />
+      {/* <ReactuseEffect /> */}
+      <hr />
+      <Object_01 />
     </>
   );
 }
