@@ -16,6 +16,7 @@ import ArrayMap from './components/ArrayMap';
 import ReactuseEffect from './components/ReactuseEffect';
 import Object_01 from './components/Owl_JavaScript/Object_01';
 import UseStateTSX from './components/TypeScript/UseStateTSX.tsx';
+import UseReducer from './components/TypeScript/UseReducer.tsx';
 import Object_01_6 from './components/Owl_JavaScript/Object_01_6.js';
 import Object_01_7 from './components/Owl_JavaScript/Object_01_7.js';
 import Object_01_8 from './components/Owl_JavaScript/Object_01_8.js';
@@ -73,9 +74,10 @@ function App() {
       {/* <Object_01 /> */}
       {/* <Object_01_6 /> */}
       {/* <Object_01_7 /> */}
-      <Object_01_8 />
+      {/* <Object_01_8 /> */}
       <hr />
       {/* <UseStateTSX /> */}
+      <UseReducer />
     </>
   );
 }
