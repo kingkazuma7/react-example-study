@@ -20,6 +20,7 @@ import UseReducer from './components/TypeScript/UseReducer.tsx';
 import Object_01_6 from './components/Owl_JavaScript/Object_01_6.js';
 import Object_01_7 from './components/Owl_JavaScript/Object_01_7.js';
 import Object_01_8 from './components/Owl_JavaScript/Object_01_8.js';
+import DestructuringAssignment from './components/DestructuringAssignment.js';
 
 
 function App() {
@@ -77,7 +78,8 @@ function App() {
       {/* <Object_01_8 /> */}
       <hr />
       {/* <UseStateTSX /> */}
-      <UseReducer />
+      {/* <UseReducer /> */}
+      <DestructuringAssignment />
     </>
   );
 }
