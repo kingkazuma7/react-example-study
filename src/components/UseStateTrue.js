@@ -1,15 +1,21 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 const useStateTrue = () => {
   // 入力するたびにレンダリングされる
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  console.log(email);
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // console.log(email);
+  
+  const emailRef = useRef();
+  const passwordRef = useRef();
 
+  // refだとレンダリングしない
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("============== handleSubmit click!! ==============");
-    console.log(email, password);
+    console.log({
+      email: emailRef.current.value,
+      password: passwordRef.current.value,
+    });
   }
 
   return (
@@ -17,14 +23,17 @@ const useStateTrue = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">メールアドレス</label>
-          <input id="email" type="email" value={email} 
-            onChange={(e) => setEmail(e.target.value)} /> 
+          <input
+            ref={emailRef}
+            id="email"
+            type="email" /> 
         </div>
         <div>
           <label htmlFor="password">パスワード</label>
-          <input id="password" type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+          <input
+            ref={passwordRef}
+            id="password"
+            type="password"
           />
         </div>
         <div>
