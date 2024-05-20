@@ -22,6 +22,8 @@ import Object_01_7 from './components/Owl_JavaScript/Object_01_7.js';
 import Object_01_8 from './components/Owl_JavaScript/Object_01_8.js';
 import DestructuringAssignment from './components/DestructuringAssignment.js';
 import UseStateTrue from './components/UseStateTrue.js';
+import ThemeContextProvider from './components/ThemeContextProvider.tsx';
+import Card from './components/Card.tsx';
 
 
 function App() {
@@ -82,7 +84,9 @@ function App() {
       {/* <UseReducer /> */}
       {/* <DestructuringAssignment /> */}
       <hr />
-      <UseStateTrue />
+      {/* <UseStateTrue /> */}
+      <hr />
+      <Card />
     </>
   );
 }
